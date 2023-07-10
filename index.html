@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="800" height="600" style="border: 1px solid #000000;">
+</canvas>
+
+<script src = "./src/js/graphics.js"></script>
+<script src = "./src/js/keyboardManager.js"></script>
+<script src = "./src/js/gameObject.js"></script>
+<script src = "./src/js/player.js"></script>
+<script src = "./src/js/ball.js"></script>
+<script src = "./src/js/rect.js"></script>
+<script src = "./src/js/rectManager.js"></script>
+<script src = "./src/js/scene.js"></script>
+<script src = "./src/js/opening.js"></script>
+<script src = "./src/js/game.js"></script>
+<script src = "./src/js/congratulations.js"></script>
+<script src = "./src/js/gameOver.js"></script>
+<script src = "./src/js/collisionManager.js"></script>
+<script src = "./src/js/sceneManager.js"></script>
+
+<script>
+
+	function loop()
+	{
+		sceneManager.update();
+		sceneManager.draw();
+		setTimeout(loop, 16);
+	}
+	
+	loop();
+	
+</script>
+
+</body>
+</html>
